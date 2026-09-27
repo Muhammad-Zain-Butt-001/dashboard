@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Interactive analytics dashboard built with HTML, CSS and JavaScript."
+    >
+
+    <title>PulseBoard | Interactive Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="#" class="logo">
+                <span class="logo-mark">P</span>
+                <span>PulseBoard</span>
+            </a>
+
+            <nav class="main-nav js-mobile-menu" aria-label="Main navigation">
+
+                <a href="#overview">Overview</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#activity">Activity</a>
+                <a href="#faq">FAQ</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button
+                    class="icon-button js-theme-toggle"
+                    type="button"
+                    aria-label="Switch to dark mode"
+                    title="Toggle theme"
+                >
+                    <span class="js-theme-icon">☾</span>
+                </button>
+
+                <button
+                    class="menu-button js-menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section class="hero" id="overview">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        INTERACTIVE DASHBOARD
+                    </span>
+
+                    <h1>
+                        Track your
+                        <span>digital activity</span>
+                        in one place.
+                    </h1>
+
+                    <p>
+                        Explore interactive statistics, charts and controls
+                        powered entirely by JavaScript.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#analytics" class="primary-button">
+                            Explore analytics
+                            <span>→</span>
+                        </a>
+
+                        <button
+                            class="secondary-button js-demo-button"
+                            type="button"
+                        >
+                            Run demo
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="visual-card">
+
+                        <div class="visual-top">
+
+                            <div>
+                                <span class="small-label">
+                                    LIVE ACTIVITY
+                                </span>
+
+                                <strong>84.6%</strong>
+                            </div>
+
+                            <span class="status-dot">
+                                Live
+                            </span>
+
+                        </div>
+
+                        <div class="mini-bars">
+
+                            <span style="height: 35%"></span>
+                            <span style="height: 52%"></span>
+                            <span style="height: 43%"></span>
+                            <span style="height: 67%"></span>
+                            <span style="height: 58%"></span>
+                            <span style="height: 82%"></span>
+                            <span style="height: 72%"></span>
+                            <span style="height: 91%"></span>
+
+                        </div>
+
+                        <div class="visual-footer">
+
+                            <span>Weekly activity</span>
+
+                            <span>
+                                <strong>+18.4%</strong>
+                                this week
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+        <section class="stats-section">
+
+            <div class="container stats-grid">
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">↗</div>
+
+                    <div>
+                        <span class="stat-label">
+                            Total visitors
+                        </span>
+
+                        <strong
+                            class="stat-value js-counter"
+                            data-target="12840"
+                        >
+                            0
+                        </strong>
+
+                        <span class="stat-change positive">
+                            +12.8%
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">◎</div>
+
+                    <div>
+                        <span class="stat-label">
+                            Engagement
+                        </span>
+
+                        <strong class="stat-value">
+                            74.8%
+                        </strong>
+
+                        <span class="stat-change positive">
+                            +6.2%
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">◈</div>
+
+                    <div>
+                        <span class="stat-label">
+                            New users
+                        </span>
+
+                        <strong
+                            class="stat-value js-counter"
+                            data-target="3482"
+                        >
+                            0
+                        </strong>
+
+                        <span class="stat-change positive">
+                            +9.4%
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">◷</div>
+
+                    <div>
+                        <span class="stat-label">
+                            Avg. session
+                        </span>
+
+                        <strong class="stat-value">
+                            4m 28s
+                        </strong>
+
+                        <span class="stat-change negative">
+                            -2.1%
+                        </span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ANALYTICS
+        ========================== -->
+        <section class="section" id="analytics">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">
+                            ANALYTICS
+                        </span>
+
+                        <h2>
+                            Performance overview
+                        </h2>
+
+                        <p>
+                            Switch between different time periods and
+                            watch the dashboard update dynamically.
+                        </p>
+                    </div>
+
+                    <div class="period-switcher">
+
+                        <button
+                            class="period-button is-active js-period"
+                            data-period="week"
+                            type="button"
+                        >
+                            7 days
+                        </button>
+
+                        <button
+                            class="period-button js-period"
+                            data-period="month"
+                            type="button"
+                        >
+                            30 days
+                        </button>
+
+                        <button
+                            class="period-button js-period"
+                            data-period="year"
+                            type="button"
+                        >
+                            12 months
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analytics-grid">
+
+                    <!-- Line Chart -->
+                    <article class="chart-card chart-large">
+
+                        <div class="chart-header">
+
+                            <div>
+                                <span class="chart-label">
+                                    PERFORMANCE
+                                </span>
+
+                                <h3 class="js-chart-title">
+                                    Weekly performance
+                                </h3>
+                            </div>
+
+                            <div class="chart-number">
+                                <strong class="js-chart-number">
+                                    81
+                                </strong>
+
+                                <span>peak</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="line-chart">
+
+                            <div class="y-axis">
+                                <span>100</span>
+                                <span>75</span>
+                                <span>50</span>
+                                <span>25</span>
+                                <span>0</span>
+                            </div>
+
+
+                            <div class="chart-area">
+
+                                <div class="grid-lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <svg
+                                    class="chart-svg"
+                                    viewBox="0 0 700 280"
+                                    preserveAspectRatio="none"
+                                    aria-label="Performance line chart"
+                                    role="img"
+                                >
+
+                                    <defs>
+
+                                        <linearGradient
+                                            id="areaGradient"
+                                            x1="0"
+                                            y1="0"
+                                            x2="0"
+                                            y2="1"
+                                        >
+                                            <stop
+                                                offset="0%"
+                                                stop-opacity="0.28"
+                                            />
+
+                                            <stop
+                                                offset="100%"
+                                                stop-opacity="0"
+                                            />
+                                        </linearGradient>
+
+                                    </defs>
+
+                                    <path
+                                        class="chart-area-fill js-chart-fill"
+                                        d=""
+                                    ></path>
+
+                                    <path
+                                        class="chart-line js-chart-line"
+                                        d=""
+                                    ></path>
+
+                                    <g class="chart-points js-chart-points"></g>
+
+                                </svg>
+
+                                <div
+                                    class="x-axis js-x-axis"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Bar Chart -->
+                    <article class="chart-card">
+
+                        <div class="chart-header">
+
+                            <div>
+                                <span class="chart-label">
+                                    ACTIVITY
+                                </span>
+
+                                <h3>
+                                    Weekly activity
+                                </h3>
+                            </div>
+
+                            <span class="chart-menu">
+                                •••
+                            </span>
+
+                        </div>
+
+
+                        <div class="bar-chart">
+
+                            <div class="bar-y-axis">
+                                <span>100</span>
+                                <span>75</span>
+                                <span>50</span>
+                                <span>25</span>
+                                <span>0</span>
+                            </div>
+
+
+                            <div class="bar-area">
+
+                                <div class="bar-grid">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="bars js-bars"></div>
+
+                                <div class="bar-labels js-bar-labels"></div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACTIVITY
+        ========================== -->
+        <section class="section activity-section" id="activity">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            ACTIVITY
+                        </span>
+
+                        <h2>
+                            Recent interactions
+                        </h2>
+
+                        <p>
+                            These cards demonstrate dynamic DOM updates
+                            and JavaScript state management.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="activity-grid">
+
+                    <!-- Counter -->
+                    <article class="interactive-card">
+
+                        <div class="card-icon purple">
+                            #
+                        </div>
+
+                        <h3>
+                            Interactive counter
+                        </h3>
+
+                        <p>
+                            Increase, decrease or reset the counter.
+                        </p>
+
+                        <div class="counter-display js-counter-display">
+                            0
+                        </div>
+
+                        <div class="counter-controls">
+
+                            <button
+                                class="control-button js-decrease"
+                                type="button"
+                            >
+                                −
+                            </button>
+
+                            <button
+                                class="control-button reset js-reset"
+                                type="button"
+                            >
+                                Reset
+                            </button>
+
+                            <button
+                                class="control-button js-increase"
+                                type="button"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Like -->
+                    <article class="interactive-card">
+
+                        <div class="card-icon pink">
+                            ♥
+                        </div>
+
+                        <h3>
+                            Like interaction
+                        </h3>
+
+                        <p>
+                            Click the button to change its state.
+                        </p>
+
+                        <button
+                            class="like-button js-like-button"
+                            type="button"
+                            aria-pressed="false"
+                        >
+                            <span class="js-like-icon">♡</span>
+                            <span class="js-like-text">Like project</span>
+                        </button>
+
+                        <span class="like-count">
+                            <strong class="js-like-count">24</strong>
+                            people liked this
+                        </span>
+
+                    </article>
+
+
+                    <!-- Progress -->
+                    <article class="interactive-card">
+
+                        <div class="card-icon green">
+                            ✓
+                        </div>
+
+                        <h3>
+                            Project progress
+                        </h3>
+
+                        <p>
+                            Dynamic progress controlled by JavaScript.
+                        </p>
+
+                        <div class="progress-info">
+
+                            <span>
+                                Completion
+                            </span>
+
+                            <strong class="js-progress-value">
+                                68%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-track">
+
+                            <div
+                                class="progress-fill js-progress-fill"
+                                style="width: 68%"
+                            ></div>
+
+                        </div>
+
+                        <button
+                            class="small-button js-progress-button"
+                            type="button"
+                        >
+                            Update progress
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+        <section class="section faq-section" id="faq">
+
+            <div class="container faq-layout">
+
+                <div class="faq-intro">
+
+                    <span class="eyebrow">
+                        FAQ
+                    </span>
+
+                    <h2>
+                        How does the interaction work?
+                    </h2>
+
+                    <p>
+                        Each interaction follows the same basic JavaScript
+                        flow: user input, processing, state change and
+                        visible DOM output.
+                    </p>
+
+                    <button
+                        class="primary-button js-notification-button"
+                        type="button"
+                    >
+                        Show notification
+                    </button>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <article class="faq-item">
+
+                        <button
+                            class="faq-question js-faq-question"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                What is DOM manipulation?
+                            </span>
+
+                            <span class="faq-plus">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                DOM manipulation means using JavaScript
+                                to read, change, create or remove elements
+                                from the webpage.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button
+                            class="faq-question js-faq-question"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                What is state?
+                            </span>
+
+                            <span class="faq-plus">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                State is data that represents the current
+                                condition of an interactive component,
+                                such as the counter value or whether
+                                dark mode is active.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button
+                            class="faq-question js-faq-question"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                Why use event listeners?
+                            </span>
+
+                            <span class="faq-plus">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Event listeners allow JavaScript to react
+                                when users click, focus, type, resize or
+                                perform other actions.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button
+                            class="faq-question js-faq-question"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                Where is the data stored?
+                            </span>
+
+                            <span class="faq-plus">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                This demonstration uses JavaScript
+                                variables for temporary state and
+                                localStorage for the selected theme.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+    <div
+        class="toast js-toast"
+        role="status"
+        aria-live="polite"
+    >
+
+        <span class="toast-icon">
+            ✓
+        </span>
+
+        <div>
+            <strong class="js-toast-title">
+                Success
+            </strong>
+
+            <p class="js-toast-message">
+                Action completed successfully.
+            </p>
+        </div>
+
+        <button
+            class="toast-close js-toast-close"
+            type="button"
+            aria-label="Close notification"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div>
+                <strong>PulseBoard</strong>
+
+                <p>
+                    Interactive Web Elements — Project 3
+                </p>
+            </div>
+
+            <p>
+                Built with HTML, CSS & JavaScript.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
